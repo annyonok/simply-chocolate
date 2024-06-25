@@ -1,0 +1,355 @@
+.modal {
+    position: relative;
+    background-color: #fafafa;
+    border-radius: 15px;
+    margin: auto;
+    padding: 32px 24px;
+    width: 311px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px; 
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 120px;
+    margin: 0 auto 32px;
+}
+
+.text__color {
+    color: #fd9222;
+}
+
+.modal__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.modal__card-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 263px;
+    height: 85px;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.modal__card-img {
+    width: 84px;
+    height: 69px;
+}
+
+.modal__card-weight {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    padding: 6px 12px;
+    width: 70px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.modal__form {
+    text-align: center;
+}
+
+.order__label {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.order__label-text {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px; 
+    color: #000000;
+}
+
+.order__label-input {
+    width: 100%;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 14px;
+}
+
+.order__input {
+    width: 100%;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 14px;
+}
+
+.phone {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.phone__input {
+    border: none;
+}
+
+.phone__flag {
+    width: 24px;
+    height: 24px;
+}
+
+.phone__code {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+
+.phone__line {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: rgba(64, 64, 64, 0.3);
+}
+
+.phone__label {
+    margin-bottom: 32px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 15px;
+}
+
+.card__img {
+    width: 32px;
+    height: 21px;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+}
+
+.order__textarea {
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 13px 18px 60px 18px;
+    width: 263px;
+    height: 91px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.order__btn {
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 109px;
+    height: 41px;
+    background-color: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 150px;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.order__btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
+
+.order__btn:active {
+    transform: scale(0.9);
+}
+
+
+
+/* Media */
+@media (min-width: 768px) {
+    .modal {
+        padding: 48px 28px;
+        width: 609px;
+    }
+
+    .modal__close {
+        top: 15px;
+        right: 20px;
+    }
+    
+    .modal__title {
+        font-size: 24px;
+        line-height: 28px; 
+    }
+
+    .modal__cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .modal__card-items {
+        flex-direction: column;
+        align-items: center;
+        width: 160px;
+        height: 196px;
+        padding: 24px 20px;
+        margin-bottom: 14px;
+    }
+
+    .modal__card-img {
+        width: 120px;
+        height: 107px;
+    }
+    
+    .modal__card-weight {
+        padding: 8px 25px;
+        width: 96px;
+        height: 33px;
+    }
+
+    .order__label-items {
+        display: flex;
+        gap: 21px;
+        justify-content: center;
+    }
+
+    .order__label-input {
+        width: 246px;
+        height: 66px;
+        border-radius: 13px;
+        padding: 22px 24px;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .order__label-text {
+        top: -25px;
+        left: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    
+    .order__input {
+        border-radius: 13px;
+        padding: 22px 24px;
+        width: 513px;
+        height: 66px;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .phone {
+        gap: 20px;
+        border-radius: 13px;
+        padding: 17px 24px;
+        width: 513px;
+        height: 66px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .phone__input {
+        border: none;
+    }
+    
+    .phone__flag {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .phone__code {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .phone__line {
+        display: block;
+        content: "";
+        width: 2px;
+        height: 30px;
+        background-color: rgba(64, 64, 64, 0.3);
+    }
+    
+    .phone__label {
+        margin-bottom: 42px;
+    }
+
+    .card {
+        margin-left: 20px;
+    }
+    
+    .card__img {
+        width: 44px;
+        height: 30px;
+        right: 35px;
+        bottom: 43px;
+    }
+
+    .order__textarea {
+        border-radius: 13px;
+        padding: 22px 24px 93px 24px;
+        width: 513px;
+        height: 137px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .order__btn {
+        padding: 14px 40px;
+        width: 133px;
+        height: 45px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-right: 370px;
+    }
+
+}
+

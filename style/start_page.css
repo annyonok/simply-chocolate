@@ -1,0 +1,227 @@
+.start__page {
+    min-height: 621px;
+    margin: 0 auto;
+    background-image: url("../img/start_page_desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 72px;
+}
+
+.start__page-content {
+    width: 295px;
+    height: 205px;
+    padding-top: 395px;
+    margin: 0 auto;
+}
+
+.start__page-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px; 
+    letter-spacing: -0.3px;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.start__page-buttons {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.start__page-order {
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    background-color: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.start__page-order:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
+
+.start__page-order:active {
+    transform: scale(0.9);
+}
+
+.start__page-made {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 12px 25px;
+    width: 159px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.start__page-made:hover {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+.start__page-made:active {
+    transform: scale(0.9);
+}
+
+.start__page-scroll {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 110px;
+    height: 28px;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.start__page-scroll:hover {
+    color: #fd9222;
+}
+
+.start__page-scroll:active {
+    transform: scale(0.9);
+}
+
+.scroll__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #fff;
+}
+
+.scroll__button {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    color: #fd9222;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.scroll__text:hover {
+    color: #fd9222;
+}
+
+.scroll__button:hover {
+    background-color: #fd9222;
+    color: #ffffff;
+}
+
+/* Media */
+@media (min-width: 320px) {
+    .start__page-made {
+        padding: 12px 5px;
+        width: 120px;
+        height: 41px;
+    }
+
+    .start__page-description {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 360px) {
+    .start__page-made {
+        padding: 12px 20px;
+        width: 150px;
+        height: 41px;
+    }
+
+    .start__page-description {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .start__page {
+        min-height: 890px;
+    }
+    
+    .start__page-content {
+        width: 624px;
+        height: 179px;
+        padding-top: 671px;
+        margin: 0 auto;
+    }
+
+    .start__page-description {
+        width: 484px;
+        height: 102px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px; 
+    }
+
+    .start__page-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .start__page-order {
+        padding: 14px 40px;
+        width: 144px;
+        height: 45px;
+    }
+    
+    .start__page-made {
+        padding: 14px 35px;
+        width: 183px;
+        height: 45px;
+    }
+
+    .start__page-scroll {
+        gap: 14px;
+        align-items: center;
+        width: 135px;
+        height: 38px;
+    }
+
+    .scroll__text {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    
+    .scroll__button {
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        padding-top: 9px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .start__page {
+        min-height: 600px;
+    }
+
+    .start__page-content {
+        width: 1056px;
+        height: 179px;
+        padding-top: 381px;
+        margin: 0 auto;
+    }
+}
+
+
