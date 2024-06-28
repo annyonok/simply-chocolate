@@ -80,3 +80,6 @@ $('.item__four-title').click(() => {
 $('.tooltip__description').click(() => {
     $('.tooltip__taste-four').fadeOut(400);
 });
+
+// Video
+$('.item__play').click(() => $('.video__player')[0].paused ? $('.video__player')[0].play() : $('.video__player')[0].pause());
