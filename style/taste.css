@@ -1,0 +1,231 @@
+.taste {
+    min-height: 1376px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.taste__content {
+    max-width: 335px;
+    min-height: 204px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.taste__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px; 
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 26px;
+    margin-bottom: 24px;
+}
+
+.taste__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-align: center;
+    
+}
+
+.taste__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.item__one {
+    position: relative;
+    border-radius: 15px;
+    width: 335px;
+    height: 270px;
+    background-color: #fd9222;
+    background-image: url("../img/milk_chocolate.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item__one-title {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.item__two {
+    position: relative;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    width: 335px;
+    height: 270px;
+    background-color: #ffffff;
+    background-image: url("../img/milk.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item__two-title {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.item__three {
+    position: relative;
+    border-radius: 15px;
+    width: 335px;
+    height: 270px;
+    background-color: #1e1823;
+    background-image: url("../img/nuts.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item__three-title {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.item__four {
+    position: relative;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    width: 335px;
+    height: 270px;
+    background-color: #ffffff;
+    background-image: url("../img/sweet_chocolate.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item__four-title {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.tooltip__taste-one {
+    position: absolute;
+    overflow: auto;
+}
+
+.tooltip__taste-two {
+    position: absolute;
+    overflow: auto;
+}
+
+.tooltip__taste-three {
+    position: absolute;
+    overflow: auto;
+}   
+
+.tooltip__taste-four {
+    position: absolute;
+    overflow: auto;
+}
+
+/* Media */
+@media (max-width: 350px) {
+    .item__one {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__two {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__three {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__four {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 768px) {
+    .taste__content {
+        max-width: 486px;
+        min-height: 156px;
+        margin-bottom: 50px;
+    }
+
+    .taste__items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+@media (min-width: 780px) {
+    .taste__items {
+    justify-content: center;
+}
+    
+}
+
+@media (min-width: 1200px) {
+    .taste__title {
+        padding: 0 50px;
+    }
+
+    .item__one {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__two {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__three {
+        width: 270px;
+        height: 270px;
+    }
+
+    .item__four {
+        width: 270px;
+        height: 270px;
+    }
+
+    .taste__items {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 19px;
+    }
+}

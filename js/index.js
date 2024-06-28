@@ -27,11 +27,10 @@
 // Menu
 $('.header__navigation-burger').click(() => {
     $('.header__navigation').slideToggle().css('display', 'flex');
-})
-
+});
 $('.header__navigation-close').click(() => {
     $('.header__navigation').slideToggle();
-})
+});
 
 // scrollDown
 $(function(){
@@ -44,8 +43,40 @@ $(function(){
 // Modal
 $('.start__page-order').click(() => {
     $('.page__overlay_modal').fadeIn(400);
-})
-
+});
 $('.modal__close').click(() => {
     $('.page__overlay_modal').fadeOut(400);
-})
+});
+
+// Pop-up
+// One
+$('.item__one-title').click(() => {
+    $('.tooltip__taste-one').fadeIn(400);
+});
+$('.tooltip__description').click(() => {
+    $('.tooltip__taste-one').fadeOut(400);
+});
+
+// Two
+$('.item__two-title').click(() => {
+    $('.tooltip__taste-two').fadeIn(400);
+});
+$('.tooltip__description').click(() => {
+    $('.tooltip__taste-two').fadeOut(400);
+});
+
+// Three
+$('.item__three-title').click(() => {
+    $('.tooltip__taste-three').fadeIn(400);    
+});
+$('.tooltip__description').click(() => {
+    $('.tooltip__taste-three').fadeOut(400);
+});
+
+// Four
+$('.item__four-title').click(() => {
+    $('.tooltip__taste-four').fadeIn(400);
+});
+$('.tooltip__description').click(() => {
+    $('.tooltip__taste-four').fadeOut(400);
+});
