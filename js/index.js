@@ -95,6 +95,7 @@ new Swiper('.swiper-container', {
         // when window width is >= 1200px
         1200: {
             slidesPerView: 4,
+            spaceBetween: 18,
             grid: {
                 fill: 'row',
                 rows: 1,
