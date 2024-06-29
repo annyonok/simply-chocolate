@@ -1,29 +1,3 @@
-// new Swiper('.swiper', {
-//     navigation: {
-//         nextEl: '.portfolio__arrow_right',
-//         prevEl: '.portfolio__arrow_left',
-//         disabledClass: 'portfolio__arrow_disable',
-//       },
-//       // Responsive breakpoints
-//     breakpoints: {
-//     // when window width is >= 480px
-//     480: {
-//       grid: {
-//         fill: 'row',
-//         rows: 2
-//       }
-//     },
-//     // when window width is >= 768px
-//     768: {
-//         slidesPerView: 2,
-//         grid: {
-//             fill: 'row',
-//             rows: 2
-//           }        
-//         }
-//   }
-// });
-
 // Menu
 $('.header__navigation-burger').click(() => {
     $('.header__navigation').slideToggle().css('display', 'flex');
@@ -33,11 +7,11 @@ $('.header__navigation-close').click(() => {
 });
 
 // scrollDown
-$(function(){
-	$('.start__page-scroll').click(() => {
-		$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 600);
-		return false;
-	});
+$(function () {
+    $('.start__page-scroll').click(() => {
+        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 600);
+        return false;
+    });
 });
 
 // Modal
@@ -67,7 +41,7 @@ $('.tooltip__description').click(() => {
 
 // Three
 $('.item__three-title').click(() => {
-    $('.tooltip__taste-three').fadeIn(400);    
+    $('.tooltip__taste-three').fadeIn(400);
 });
 $('.tooltip__description').click(() => {
     $('.tooltip__taste-three').fadeOut(400);
@@ -83,3 +57,50 @@ $('.tooltip__description').click(() => {
 
 // Video
 $('.item__play').click(() => $('.video__player')[0].paused ? $('.video__player')[0].play() : $('.video__player')[0].pause());
+
+// Slider
+jQuery(function($) {
+
+    $('.swiper-object .swiper-container').each(function(index, value) {
+new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+
+    breakpoints: {
+        // when window width is >= 480px
+        680: {
+            grid: {
+                slidesPerView: 1,
+                fill: 'row',
+                rows: 1,
+            }
+        },
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+            grid: {
+                fill: 'row',
+                rows: 1,
+            }
+        },
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 4,
+            grid: {
+                fill: 'row',
+                rows: 1,
+            }
+        },
+    },
+});
+    });
+});
