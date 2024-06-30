@@ -15,11 +15,15 @@ $(function () {
 });
 
 // Modal
-$('.start__page-order').click(() => {
+$('.order').click(() => {
     $('.page__overlay_modal').fadeIn(400);
 });
 $('.modal__close').click(() => {
     $('.page__overlay_modal').fadeOut(400);
+});
+$(document).keydown(function(e) {
+    const code = e.keyCode || e.which;
+    if (code == 27) $(".page__overlay_modal").hide();
 });
 
 // Pop-up
