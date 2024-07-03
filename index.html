@@ -369,8 +369,9 @@
                             </div>
 
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
+
                 </div>
 
             </div>
@@ -385,7 +386,9 @@
 
                     <div class="sellers__item-text">
                         <div class="sellers__item-img1 sellers__images"></div>
-                        <p class="sellers__item-description">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                        <p class="sellers__item-description">Crazy enough chocolate originates from a bean just like the
+                            coffee bean called Cacao. Cacao has been around for thousands of years and was first
+                            discovered by the Native American tribe called the Mayans.</p>
                     </div>
 
                     <div class="sellers__item">
@@ -398,8 +401,72 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
 
-                
+        <section class="reviews">
+            <div class="container">
+
+                <h3 class="reviews__title"><span class="text__color">Chocolate</span> is loved</h3>
+
+                <div class="swiper-object">
+                    <div class="swiper-container">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo01.png">
+                                <h3 class="reviews__card-title">Victoria Dobrzhanska</h3>
+                                <p class="reviews__card-description">I love this chocolate bar. Perfect combination of
+                                    light crispy wafer, covered in a thin layer chocolate.</p>
+                            </div>
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo02.png">
+                                <h3 class="reviews__card-title">Nazar Babenko</h3>
+                                <p class="reviews__card-description">This chocolate confection is a delight! A delight!
+                                    The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is
+                                    good.</p>
+                            </div>
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo03.png">
+                                <h3 class="reviews__card-title">Elena Kampusch</h3>
+                                <p class="reviews__card-description">Chocolate is a family favourite treat. Love the
+                                    delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+                                </p>
+                            </div>
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo01.png">
+                                <h3 class="reviews__card-title">Victoria Dobrzhanska</h3>
+                                <p class="reviews__card-description">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+                            </div>
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo02.png">
+                                <h3 class="reviews__card-title">Nazar Babenko</h3>
+                                <p class="reviews__card-description">This chocolate confection is a delight! A delight!
+                                    The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is
+                                    good.</p>
+                            </div>
+
+                            <div class="reviews__card swiper-slide">
+                                <img class="reviews__card-img" src="img/reviews_photo03.png">
+                                <h3 class="reviews__card-title">Elena Kampusch</h3>
+                                <p class="reviews__card-description">Chocolate is a family favourite treat. Love the
+                                    delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                </div>
+
+                <button class="reviews__button review">Leave a review</button>
+
             </div>
         </section>
 
@@ -471,6 +538,53 @@
                 </fieldset>
 
                 <button class="order__btn" type="submit">Submit</button>
+
+            </form>
+
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Modal reviews -->
+    <div class="page__overlay page__reviews_modal">
+        <div class="modal reviews__modal">
+            <h3 class="modal__title reviews__modal-title">Leave a review <br> about <span class="text__color">our chocolate</span></h3>
+
+            <form class="reviews__form review">
+
+                <fieldset class="reviews__group">
+                    <legend class="visually-hidden">Personal information</legend>
+                    <label class="reviews__label">
+                        <div class="reviews__label-items">
+                            <input class="reviews__label-input" type="text" name="name" placeholder="Name" required>
+                            <input class="reviews__input" type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </label>
+
+                    <label class="reviews__label reviews__phone-label">
+                        <span class="reviews__phone">
+                            <img class="phone__flag" src="img/flag_russia.svg" alt="Flag Russia">
+                            <p class="phone__code">+7</p>
+                            <div class="phone__line"></div>
+                            <input class="reviews__phone-input" type="tel" name="phone" placeholder="Phone number" required>
+                        </span>
+                    </label>
+
+                    <label class="reviews__label">
+                        <textarea class="reviews__textarea" name="text" required>Enter text</textarea>
+                    </label>
+
+                </fieldset>
+
+                <button class="reviews__btn" type="submit">Send</button>
 
             </form>
 

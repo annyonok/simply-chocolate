@@ -23,7 +23,19 @@ $('.modal__close').click(() => {
 });
 $(document).keydown(function(e) {
     const code = e.keyCode || e.which;
-    if (code == 27) $(".page__overlay_modal").hide();
+    if (code == 27) $('.page__overlay_modal').hide();
+});
+
+// Modal
+$('.review').click(() => {
+    $('.page__reviews_modal').fadeIn(400);
+});
+$('.modal__close').click(() => {
+    $('.page__reviews_modal').fadeOut(400);
+});
+$(document).keydown(function(e) {
+    const code = e.keyCode || e.which;
+    if (code == 27) $('.page__reviews_modal').hide();
 });
 
 // Pop-up
@@ -63,12 +75,9 @@ $('.tooltip__description').click(() => {
 $('.item__play').click(() => $('.video__player')[0].paused ? $('.video__player')[0].play() : $('.video__player')[0].pause());
 
 // Slider
-jQuery(function($) {
-
-    $('.swiper-object .swiper-container').each(function(index, value) {
 new Swiper('.swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 30,
     loop: true,
 
     pagination: {
@@ -90,7 +99,7 @@ new Swiper('.swiper-container', {
         // when window width is >= 768px
         768: {
             slidesPerView: 2,
-            spaceBetween: 18,
+            spaceBetween: 20,
             grid: {
                 fill: 'row',
                 rows: 1,
@@ -98,14 +107,12 @@ new Swiper('.swiper-container', {
         },
         // when window width is >= 1200px
         1200: {
-            slidesPerView: 4,
-            spaceBetween: 18,
+            slidesPerView: 3,
+            spaceBetween: 20,
             grid: {
                 fill: 'row',
                 rows: 1,
             }
         },
     },
-});
-    });
 });

@@ -18,7 +18,8 @@
 .modal__title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
+    letter-spacing: -0.3px;
     text-transform: uppercase;
     text-align: center;
     min-width: 120px;
@@ -210,9 +211,154 @@
     transform: scale(0.9);
 }
 
+/* Modal reviews */
+.reviews__modal-title {
+    text-align: left;
+    min-width: 255px;
+}
 
+.reviews__form {
+    text-align: center;
+}
+
+.reviews__label {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.reviews__label-text {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px; 
+    color: #000000;
+}
+
+.reviews__label-input {
+    width: 100%;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 14px;
+}
+
+.reviews__input {
+    width: 100%;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 14px;
+}
+
+.reviews__phone {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 13px 18px;
+    width: 263px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.reviews__phone-input {
+    border: none;
+}
+
+.phone__flag {
+    width: 24px;
+    height: 24px;
+}
+
+.phone__code {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+
+.phone__line {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: rgba(64, 64, 64, 0.3);
+}
+
+.reviews__label {
+    margin-bottom: 32px;
+}
+
+.reviews__textarea {
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 13px 18px 60px 18px;
+    width: 263px;
+    height: 91px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.reviews__btn {
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 93px;
+    height: 41px;
+    background-color: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 150px;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.reviews__btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
+
+.reviews__btn:active {
+    transform: scale(0.9);
+}
 
 /* Media */
+@media (max-width: 350px) {
+    .modal {
+        width: 290px;
+        padding: 15px 0;
+    }
+
+    .reviews__modal-title {
+        min-width: 250px;
+        padding: 10px 15px;
+    }
+
+}
+
 @media (min-width: 768px) {
     .modal {
         padding: 48px 28px;
@@ -351,6 +497,48 @@
         font-weight: 600;
         font-size: 14px;
         margin-right: 370px;
+    }
+
+    .reviews__modal {
+        width: 517px;
+        padding: 40px;
+    }
+
+    .reviews__label-input {
+        width: 437px;
+        height: 66px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    .reviews__input {
+        width: 437px;
+        height: 66px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    .reviews__phone {
+        width: 437px;
+        height: 66px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    .reviews__textarea {
+        border-radius: 13px;
+        padding: 22px 24px 93px 24px;
+        width: 436px;
+        height: 137px;
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    .reviews__btn {
+        padding: 14px 40px;
+        width: 117px;
+        height: 45px;
+        margin-right: 310px;
     }
 
 }

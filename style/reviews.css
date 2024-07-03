@@ -1,0 +1,106 @@
+.reviews {
+    min-height: 404px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.reviews__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px; 
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.reviews__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    max-width: 335px;
+    min-height: 250px;
+    box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
+    background-color: #ffffff;
+}
+
+.reviews__card-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.reviews__card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px; 
+    text-align: center;
+}
+
+.reviews__card-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+    padding: 20px;
+}
+
+.reviews__button {
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 165px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 85px;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.reviews__button:hover {
+    background-color: #fd9222;
+    color: #ffffff;
+}
+
+.reviews__button:active {
+    transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+    .reviews {
+        min-height: 463px;
+    }
+
+    .reviews__title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 50px;
+    }
+
+    .reviews__card {
+        max-width: 344px;
+        height: 230px;
+    }
+
+    .reviews__button {
+        padding: 14px 40px;
+        width: 222px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .reviews__card {
+        max-width: 360px;
+        height: 220px;
+    }
+}

@@ -66,9 +66,14 @@ h1, h2, h3, p {
     overflow: auto;
     padding: 15px;
     display: flex;
+    z-index: 999;
 }
 
 .page__overlay_modal {
+    display: none;
+}
+
+.page__reviews_modal {
     display: none;
 }
 
