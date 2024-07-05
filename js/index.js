@@ -9,12 +9,12 @@ $('.header__navigation-close').click(() => {
 // scrollDown
 $(function () {
     $('.start__page-scroll').click(() => {
-        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 600);
+        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 2000);
         return false;
     });
 });
 
-// Modal
+// Modal order
 $('.order').click(() => {
     $('.page__overlay_modal').fadeIn(400);
 });
@@ -26,7 +26,7 @@ $(document).keydown(function(e) {
     if (code == 27) $('.page__overlay_modal').hide();
 });
 
-// Modal
+// Modal reviews
 $('.review').click(() => {
     $('.page__reviews_modal').fadeIn(400);
 });
@@ -69,6 +69,18 @@ $('.item__four-title').click(() => {
 });
 $('.tooltip__description').click(() => {
     $('.tooltip__taste-four').fadeOut(400);
+});
+
+// Pop up subscribe
+$('.subscription').click(() => {
+    $('.page__subscribe_popup').fadeIn(400);
+});
+$('.popup__close').click(() => {
+    $('.page__subscribe_popup').fadeOut(400);
+});
+$(document).keydown(function(e) {
+    const code = e.keyCode || e.which;
+    if (code == 27) $('.page__subscribe_popup').hide();
 });
 
 // Video

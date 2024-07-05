@@ -69,11 +69,27 @@ h1, h2, h3, p {
     z-index: 999;
 }
 
+.subscribe__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 15px;
+    display: flex;
+    z-index: 999;
+}
+
 .page__overlay_modal {
     display: none;
 }
 
 .page__reviews_modal {
+    display: none;
+}
+
+.page__subscribe_popup {
     display: none;
 }
 

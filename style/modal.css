@@ -1,3 +1,4 @@
+/* Modal order */
 .modal {
     position: relative;
     background-color: #fafafa;
@@ -84,7 +85,7 @@
     left: 20px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px; 
+    line-height: 14px;
     color: #000000;
 }
 
@@ -233,7 +234,7 @@
     left: 20px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px; 
+    line-height: 14px;
     color: #000000;
 }
 
@@ -369,17 +370,17 @@
         top: 15px;
         right: 20px;
     }
-    
+
     .modal__title {
         font-size: 24px;
-        line-height: 28px; 
+        line-height: 28px;
     }
 
     .modal__cards {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .modal__card-items {
         flex-direction: column;
         align-items: center;
@@ -393,7 +394,7 @@
         width: 120px;
         height: 107px;
     }
-    
+
     .modal__card-weight {
         padding: 8px 25px;
         width: 96px;
@@ -421,9 +422,9 @@
         left: 20px;
         font-weight: 500;
         font-size: 14px;
-        line-height: 18px; 
+        line-height: 18px;
     }
-    
+
     .order__input {
         border-radius: 13px;
         padding: 22px 24px;
@@ -443,21 +444,21 @@
         font-weight: 400;
         font-size: 18px;
     }
-    
+
     .phone__input {
         border: none;
     }
-    
+
     .phone__flag {
         width: 32px;
         height: 32px;
     }
-    
+
     .phone__code {
         font-weight: 500;
         font-size: 18px;
     }
-    
+
     .phone__line {
         display: block;
         content: "";
@@ -465,7 +466,7 @@
         height: 30px;
         background-color: rgba(64, 64, 64, 0.3);
     }
-    
+
     .phone__label {
         margin-bottom: 42px;
     }
@@ -473,7 +474,7 @@
     .card {
         margin-left: 20px;
     }
-    
+
     .card__img {
         width: 44px;
         height: 30px;
@@ -489,7 +490,7 @@
         font-weight: 400;
         font-size: 18px;
     }
-    
+
     .order__btn {
         padding: 14px 40px;
         width: 133px;
@@ -542,4 +543,3 @@
     }
 
 }
-
