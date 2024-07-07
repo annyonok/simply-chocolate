@@ -30,7 +30,7 @@
     background-color: #fd9222;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px; 
+    line-height: 12px;
     color: #fff;
     transition-property: background-color, transform;
     transition-duration: 0.3s, 0.1s;
@@ -54,7 +54,7 @@
     background-color: #fd9222;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px; 
+    line-height: 12px;
     color: #ffffff;
     transition-property: background-color, transform;
     transition-duration: 0.3s, 0.1s;
@@ -79,7 +79,7 @@
     background-color: #ffffff;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px; 
+    line-height: 12px;
     color: #111111;
     transition-property: background-color, transform;
     transition-duration: 0.3s, 0.1s;
@@ -103,7 +103,7 @@
     background-color: #fd9222;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px; 
+    line-height: 12px;
     color: #fff;
     transition-property: background-color, transform;
     transition-duration: 0.3s, 0.1s;
@@ -122,9 +122,8 @@
 .tooltip__description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
     letter-spacing: -0.2px;
-    cursor: pointer;
 }
 
 /* Pop up subscribe */
@@ -154,7 +153,7 @@
 .subscribe__popup-title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: -0.3px;
     text-transform: uppercase;
     text-align: left;
@@ -205,7 +204,6 @@
     transform: scale(0.9);
 }
 
-
 /* Media */
 @media (max-width: 350px) {
     .tooltip {
@@ -224,7 +222,7 @@
         top: 20px;
         right: 20px;
     }
-    
+
     .subscribe__popup-img {
         width: 538px;
         height: 196px;
@@ -252,7 +250,7 @@
         right: 40px;
         width: 137px;
         height: 52px;
-    }    
+    }
 }
 
 @media (min-width: 1200px) {
@@ -262,6 +260,3 @@
         padding: 8px;
     }
 }
-
-
-

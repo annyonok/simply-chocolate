@@ -357,7 +357,6 @@
         min-width: 250px;
         padding: 10px 15px;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -541,5 +540,4 @@
         height: 45px;
         margin-right: 310px;
     }
-
 }

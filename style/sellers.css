@@ -6,7 +6,7 @@
 .sellers__title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: -0.3px;
     text-transform: uppercase;
     text-align: center;
@@ -40,7 +40,7 @@
     display: none;
 }
 
-.sellers__item-img3 {    
+.sellers__item-img3 {
     background-image: url("../img/sellers_03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
 .sellers__item-description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
     line-height: 1.28571;
     letter-spacing: -0.2px;
 }

@@ -9,7 +9,7 @@ $('.header__navigation-close').click(() => {
 // scrollDown
 $(function () {
     $('.start__page-scroll').click(() => {
-        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 2000);
+        $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000);
         return false;
     });
 });
@@ -21,7 +21,7 @@ $('.order').click(() => {
 $('.modal__close').click(() => {
     $('.page__overlay_modal').fadeOut(400);
 });
-$(document).keydown(function(e) {
+$(document).keydown(function (e) {
     const code = e.keyCode || e.which;
     if (code == 27) $('.page__overlay_modal').hide();
 });
@@ -33,7 +33,7 @@ $('.review').click(() => {
 $('.modal__close').click(() => {
     $('.page__reviews_modal').fadeOut(400);
 });
-$(document).keydown(function(e) {
+$(document).keydown(function (e) {
     const code = e.keyCode || e.which;
     if (code == 27) $('.page__reviews_modal').hide();
 });
@@ -43,7 +43,7 @@ $(document).keydown(function(e) {
 $('.item__one-title').click(() => {
     $('.tooltip__taste-one').fadeIn(400);
 });
-$('.tooltip__description').click(() => {
+$('.chocolate').click(() => {
     $('.tooltip__taste-one').fadeOut(400);
 });
 
@@ -51,7 +51,7 @@ $('.tooltip__description').click(() => {
 $('.item__two-title').click(() => {
     $('.tooltip__taste-two').fadeIn(400);
 });
-$('.tooltip__description').click(() => {
+$('.milk').click(() => {
     $('.tooltip__taste-two').fadeOut(400);
 });
 
@@ -59,7 +59,7 @@ $('.tooltip__description').click(() => {
 $('.item__three-title').click(() => {
     $('.tooltip__taste-three').fadeIn(400);
 });
-$('.tooltip__description').click(() => {
+$('.nuts').click(() => {
     $('.tooltip__taste-three').fadeOut(400);
 });
 
@@ -67,7 +67,7 @@ $('.tooltip__description').click(() => {
 $('.item__four-title').click(() => {
     $('.tooltip__taste-four').fadeIn(400);
 });
-$('.tooltip__description').click(() => {
+$('.sweet').click(() => {
     $('.tooltip__taste-four').fadeOut(400);
 });
 
@@ -78,7 +78,7 @@ $('.subscription').click(() => {
 $('.popup__close').click(() => {
     $('.page__subscribe_popup').fadeOut(400);
 });
-$(document).keydown(function(e) {
+$(document).keydown(function (e) {
     const code = e.keyCode || e.which;
     if (code == 27) $('.page__subscribe_popup').hide();
 });

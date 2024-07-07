@@ -44,7 +44,7 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.2px;
-    color: rgba(255, 255, 255, 0.7);    
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* Media */
@@ -60,7 +60,7 @@
         min-height: 344px;
         padding: 50px;
     }
-    
+
     .benefits__items {
         position: relative;
         justify-content: space-between;
@@ -69,7 +69,7 @@
         padding: 0;
     }
 
-    .benefits__item {        
+    .benefits__item {
         width: 308px;
         height: 244px;
         padding: 0;
@@ -83,7 +83,7 @@
         content: "";
         width: 1px;
         height: 124px;
-        background-color: rgba(255, 255, 255, 0.5);        
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .benefits__line-second {
@@ -94,10 +94,8 @@
         content: "";
         width: 1px;
         height: 124px;
-        background-color: rgba(255, 255, 255, 0.5);  
+        background-color: rgba(255, 255, 255, 0.5);
     }
-    
-    
+
+
 }
-
-

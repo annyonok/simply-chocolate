@@ -10,7 +10,7 @@
 .footer__content-title {
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px; 
+    line-height: 28px;
     letter-spacing: -0.2px;
     color: #ffffff;
 }
@@ -40,7 +40,7 @@
 .footer__content-contact {
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
     letter-spacing: -0.2px;
     color: #ffffff;
 }
@@ -83,7 +83,7 @@
 
 .footer__navigation-item {
     font-weight: 500;
-    line-height: 16px; 
+    line-height: 16px;
     letter-spacing: -0.2px;
     color: #ffffff;
 }
@@ -100,7 +100,7 @@
 
     .footer__content-title {
         font-size: 20px;
-        line-height: 24px; 
+        line-height: 24px;
     }
 }
 
@@ -129,7 +129,7 @@
     .footer__content-contacts {
         padding-top: 50px;
     }
-    
+
     .footer__content-social {
         padding-top: 50px;
         margin-left: 50px;
@@ -149,11 +149,11 @@
         position: relative;
         transition: all 0.5s ease;
     }
-    
+
     .footer__navigation-item:hover {
         color: #fd9222;
     }
-    
+
     .footer__navigation-item::after {
         content: "";
         position: absolute;
@@ -165,7 +165,7 @@
         background-color: #fd9222;
         transition: all 0.5s ease;
     }
-    
+
     .footer__navigation-item:hover:after {
         width: 100%;
     }

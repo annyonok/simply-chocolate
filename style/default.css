@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -46,7 +47,10 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -116,5 +120,3 @@ legend {
     margin: 0;
     padding: 0;
 }
-
-
