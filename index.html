@@ -128,7 +128,7 @@
                     <div class="start__page-items">
                         <div class="start__page-buttons">
                             <button class="start__page-order order">Buy now</button>
-                            <a href="#made"><button class="start__page-made">How it’s made</button></a>
+                            <button class="start__page-made"><a href="#made">How it’s made</a></button>
                         </div>
 
                         <button class="start__page-scroll">
@@ -604,20 +604,20 @@
 
                     <label class="order__label phone__label">
                         <span class="order__label-text">Phone number</span>
-                        <span class="phone">
+                        <div class="phone">
                             <img class="phone__flag" src="img/flag_russia.svg" alt="Flag Russia">
                             <p class="phone__code">+7</p>
                             <div class="phone__line"></div>
                             <input class="phone__input" type="tel" name="phone" placeholder="Phone number" required>
-                        </span>
+                        </div>
                     </label>
 
                     <label class="order__label">
                         <span class="order__label-text">Card number</span>
-                        <span class="card">
+                        <div class="card">
                             <input class="order__input" type="text" name="card-number" pattern="[0-9]+" placeholder="Enter card" required>
                             <img class="card__img" src="img/mir_logo.svg" alt="Card Mir">
-                        </span>
+                        </div>
                     </label>
 
                     <label class="order__label">
@@ -653,21 +653,21 @@
                 <fieldset class="reviews__group">
                     <legend class="visually-hidden">Personal information</legend>
                     <label class="reviews__label">
-                        <div class="reviews__label-items">
+                        <span class="reviews__label-items">
                             <input class="reviews__label-input" type="text" name="name" placeholder="Name" required>
                             <input class="reviews__input" type="email" name="email" placeholder="Enter your email"
                                 required>
-                        </div>
+                        </span>
                     </label>
 
                     <label class="reviews__label reviews__phone-label">
-                        <span class="reviews__phone">
+                        <div class="reviews__phone">
                             <img class="phone__flag" src="img/flag_russia.svg" alt="Flag Russia">
                             <p class="phone__code">+7</p>
                             <div class="phone__line"></div>
                             <input class="reviews__phone-input" type="tel" name="phone" placeholder="Phone number"
                                 required>
-                        </span>
+                        </div>
                     </label>
 
                     <label class="reviews__label">
@@ -703,11 +703,11 @@
                 <fieldset class="subscribe__group">
                     <legend class="visually-hidden">Personal information</legend>
                     <label class="subscribe__label">
-                        <div class="subscribe__label-items">
+                        <span class="subscribe__label-items">
                             <input class="subscribe__label-input" type="email" name="email"
                                 placeholder="Enter your email" required>
                             <button class="subscribe__button" type="submit">Subscribe</button>
-                        </div>
+                        </span>
                     </label>
                 </fieldset>
             </form>
